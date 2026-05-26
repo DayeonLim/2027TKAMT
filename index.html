@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TKAMT 2027 | TKA Math Tournament</title>
+  <meta name="description" content="The King's Academy Math Tournament 2027 — the premier high school math competition in the region. Register your school today." />
+
+  <!-- Google Analytics 4 — replace G-XXXXXXXXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">
+        <span class="logo-tka">TKA</span><span class="logo-mt">MT</span>
+        <span class="logo-year">2027</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stats">2026 Recap</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#archive">Archive</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#register" class="nav-cta">Register Interest</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="nav-mobile" id="nav-mobile">
+      <li><a href="#about">About</a></li>
+      <li><a href="#stats">2026 Recap</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#archive">Archive</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#register">Register Interest</a></li>
+    </ul>
+  </nav>
+
+  <!-- ─── HERO ─────────────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Save the Date</div>
+      <h1>TKA Math<br /><span class="hero-accent">Tournament</span></h1>
+      <p class="hero-sub">The premier high school mathematics competition in the region, hosted by The King's Academy.</p>
+      <div class="hero-date-box">
+        <div class="date-item">
+          <span class="date-label">Date</span>
+          <span class="date-val">Spring 2027</span>
+        </div>
+        <div class="date-divider"></div>
+        <div class="date-item">
+          <span class="date-label">Location</span>
+          <span class="date-val">The King's Academy<br/><small>Sunnyvale, CA</small></span>
+        </div>
+        <div class="date-divider"></div>
+        <div class="date-item">
+          <span class="date-label">Registration</span>
+          <span class="date-val">Opens Fall 2026</span>
+        </div>
+      </div>
+      <div class="hero-cta-group">
+        <a href="#register" class="btn btn-primary">Get Notified</a>
+        <a href="#about" class="btn btn-ghost">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">About the Tournament</div>
+      <h2>Where Students Compete,<br/>Grow, and <span class="accent">Inspire</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>The TKA Math Tournament (TKAMT) is an annual invitational mathematics competition hosted by The King's Academy. Now entering its second decade, TKAMT brings together top mathematical minds from high schools across the region for a day of rigorous and rewarding problem-solving.</p>
+          <p>Designed to challenge students across all levels, the tournament features individual sprint and target rounds, collaborative team rounds, and an exciting countdown relay. Whether you're a seasoned competitor or a first-timer, TKAMT offers a welcoming and electrifying atmosphere.</p>
+          <div class="about-highlights">
+            <div class="highlight-chip">🏆 10+ Years Running</div>
+            <div class="highlight-chip">📐 AMC-style Problems</div>
+            <div class="highlight-chip">🤝 Team & Individual</div>
+            <div class="highlight-chip">🎓 Grades 9–12</div>
+          </div>
+        </div>
+        <div class="about-image-wrap">
+          <!-- Replace with real photo: <img src="assets/photos/about.jpg" alt="Students competing at TKAMT" /> -->
+          <div class="photo-placeholder about-photo">
+            <svg viewBox="0 0 80 60" fill="none"><rect width="80" height="60" rx="4" fill="#1e2d4a"/><path d="M20 40L32 28l8 8 10-14 10 12" stroke="#c9a227" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="58" cy="18" r="4" fill="#c9a227" opacity="0.5"/></svg>
+            <span>Replace with tournament photo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 2026 STATS ──────────────────────────────────────────────── -->
+  <section id="stats" class="stats-section">
+    <div class="container">
+      <div class="section-label light">2026 Tournament Recap</div>
+      <h2 class="light">Last Year by the <span class="accent-gold">Numbers</span></h2>
+      <div class="stats-grid">
+        <div class="stat-card" data-count="[SCHOOLS]">
+          <div class="stat-number" data-target="24">24</div>
+          <div class="stat-label">Schools Competed</div>
+        </div>
+        <div class="stat-card" data-count="[STUDENTS]">
+          <div class="stat-number" data-target="200">200</div>
+          <div class="stat-label">Student Competitors</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="6">6</div>
+          <div class="stat-label">Events & Rounds</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="1">1</div>
+          <div class="stat-label">Epic Day</div>
+        </div>
+      </div>
+      <div class="stats-winner-box">
+        <h3>2026 Champions</h3>
+        <div class="winners-grid">
+          <div class="winner-card">
+            <div class="winner-place gold">1st</div>
+            <div class="winner-name">[School Name]</div>
+            <div class="winner-score">[Score] pts</div>
+          </div>
+          <div class="winner-card">
+            <div class="winner-place silver">2nd</div>
+            <div class="winner-name">[School Name]</div>
+            <div class="winner-score">[Score] pts</div>
+          </div>
+          <div class="winner-card">
+            <div class="winner-place bronze">3rd</div>
+            <div class="winner-name">[School Name]</div>
+            <div class="winner-score">[Score] pts</div>
+          </div>
+        </div>
+        <div class="individual-winner">
+          <span class="iw-label">Top Individual Scorer</span>
+          <span class="iw-name">[Student Name] — [School] — [Score] pts</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EVENTS ────────────────────────────────────────────────────── -->
+  <section id="events">
+    <div class="container">
+      <div class="section-label">Competition Format</div>
+      <h2>What to <span class="accent">Expect</span></h2>
+      <p class="section-intro">TKAMT is structured as a full-day invitational. Teams of up to six students compete across four distinct events designed to test speed, accuracy, and collaboration.</p>
+      <div class="events-grid">
+        <div class="event-card">
+          <div class="event-icon">⚡</div>
+          <h3>Sprint Round</h3>
+          <p>30 individual problems in 30 minutes. No calculators. Tests breadth of knowledge across all major math topics.</p>
+          <div class="event-meta"><span>Individual</span><span>30 min</span></div>
+        </div>
+        <div class="event-card">
+          <div class="event-icon">🎯</div>
+          <h3>Target Round</h3>
+          <p>4 pairs of problems with 6 minutes per pair. Emphasis on multi-step problem solving and depth.</p>
+          <div class="event-meta"><span>Individual</span><span>24 min</span></div>
+        </div>
+        <div class="event-card">
+          <div class="event-icon">🤝</div>
+          <h3>Team Round</h3>
+          <p>10 problems solved collaboratively by a team of 4–6. Communication and strategy are just as important as math skills.</p>
+          <div class="event-meta"><span>Team</span><span>20 min</span></div>
+        </div>
+        <div class="event-card">
+          <div class="event-icon">🔁</div>
+          <h3>Relay Round</h3>
+          <p>Chains of 3-student problems where each answer feeds the next. Mistakes cascade — precision under pressure is key.</p>
+          <div class="event-meta"><span>Team</span><span>3 sets</span></div>
+        </div>
+        <div class="event-card">
+          <div class="event-icon">🏁</div>
+          <h3>Countdown Round</h3>
+          <p>Top scorers face off head-to-head on a buzzer system. Fast-paced, high-energy, and crowd-pleasing.</p>
+          <div class="event-meta"><span>Top 10</span><span>Elimination</span></div>
+        </div>
+        <div class="event-card event-card-cta">
+          <div class="event-icon">📅</div>
+          <h3>Full Schedule</h3>
+          <p>Check-in at 8:00 AM. Awards ceremony at 4:00 PM. Full schedule released 4 weeks before tournament day.</p>
+          <div class="event-meta"><span>All Day</span><span>~8 hrs</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GALLERY ────────────────────────────────────────────────────── -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-label">Photo Gallery</div>
+      <h2>Moments from <span class="accent">TKAMT 2026</span></h2>
+      <p class="section-intro">Add your photos below — replace each placeholder div with an <code>&lt;img&gt;</code> tag pointing to your image file in <code>assets/photos/</code>.</p>
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Replace each photo-placeholder with: <img src="assets/photos/photo1.jpg" alt="..."> -->
+        <div class="photo-placeholder gal-ph tall"><span>Photo 1<br/><small>assets/photos/photo1.jpg</small></span></div>
+        <div class="photo-placeholder gal-ph"><span>Photo 2<br/><small>assets/photos/photo2.jpg</small></span></div>
+        <div class="photo-placeholder gal-ph"><span>Photo 3<br/><small>assets/photos/photo3.jpg</small></span></div>
+        <div class="photo-placeholder gal-ph wide"><span>Photo 4 (wide)<br/><small>assets/photos/photo4.jpg</small></span></div>
+        <div class="photo-placeholder gal-ph"><span>Photo 5<br/><small>assets/photos/photo5.jpg</small></span></div>
+        <div class="photo-placeholder gal-ph tall"><span>Photo 6<br/><small>assets/photos/photo6.jpg</small></span></div>
+        <div class="photo-placeholder gal-ph"><span>Photo 7<br/><small>assets/photos/photo7.jpg</small></span></div>
+        <div class="photo-placeholder gal-ph"><span>Photo 8<br/><small>assets/photos/photo8.jpg</small></span></div>
+      </div>
+      <button class="btn btn-outline gallery-btn" id="gallery-load-more">Load More Photos</button>
+    </div>
+  </section>
+
+  <!-- ─── ARCHIVE ────────────────────────────────────────────────────── -->
+  <section id="archive">
+    <div class="container">
+      <div class="section-label">Past Tournaments</div>
+      <h2>Tournament <span class="accent">Archive</span></h2>
+      <p class="section-intro">A record of every TKAMT since our founding. Click any year to expand results.</p>
+      <div class="archive-list">
+
+        <div class="archive-item" data-year="2026">
+          <button class="archive-header">
+            <span class="archive-year">2026</span>
+            <span class="archive-summary">24 schools · 200 students · Champion: [School]</span>
+            <svg class="archive-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="archive-body">
+            <table class="results-table">
+              <thead><tr><th>Place</th><th>School</th><th>Team Score</th></tr></thead>
+              <tbody>
+                <tr><td>🥇 1st</td><td>[School Name]</td><td>[Score]</td></tr>
+                <tr><td>🥈 2nd</td><td>[School Name]</td><td>[Score]</td></tr>
+                <tr><td>🥉 3rd</td><td>[School Name]</td><td>[Score]</td></tr>
+                <tr><td>4th</td><td>[School Name]</td><td>[Score]</td></tr>
+                <tr><td>5th</td><td>[School Name]</td><td>[Score]</td></tr>
+              </tbody>
+            </table>
+            <p class="archive-individual"><strong>Top Individual:</strong> [Student] — [School] — [Score] pts</p>
+            <a href="#" class="archive-link">View full results PDF ↗</a>
+          </div>
+        </div>
+
+        <div class="archive-item" data-year="2025">
+          <button class="archive-header">
+            <span class="archive-year">2025</span>
+            <span class="archive-summary">22 schools · 185 students · Champion: [School]</span>
+            <svg class="archive-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="archive-body">
+            <table class="results-table">
+              <thead><tr><th>Place</th><th>School</th><th>Team Score</th></tr></thead>
+              <tbody>
+                <tr><td>🥇 1st</td><td>[School Name]</td><td>[Score]</td></tr>
+                <tr><td>🥈 2nd</td><td>[School Name]</td><td>[Score]</td></tr>
+                <tr><td>🥉 3rd</td><td>[School Name]</td><td>[Score]</td></tr>
+                <tr><td>4th</td><td>[School Name]</td><td>[Score]</td></tr>
+                <tr><td>5th</td><td>[School Name]</td><td>[Score]</td></tr>
+              </tbody>
+            </table>
+            <a href="#" class="archive-link">View full results PDF ↗</a>
+          </div>
+        </div>
+
+        <div class="archive-item" data-year="2024">
+          <button class="archive-header">
+            <span class="archive-year">2024</span>
+            <span class="archive-summary">20 schools · 170 students · Champion: [School]</span>
+            <svg class="archive-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="archive-body">
+            <table class="results-table">
+              <thead><tr><th>Place</th><th>School</th><th>Team Score</th></tr></thead>
+              <tbody>
+                <tr><td>🥇 1st</td><td>[School Name]</td><td>[Score]</td></tr>
+                <tr><td>🥈 2nd</td><td>[School Name]</td><td>[Score]</td></tr>
+                <tr><td>🥉 3rd</td><td>[School Name]</td><td>[Score]</td></tr>
+              </tbody>
+            </table>
+            <a href="#" class="archive-link">View full results PDF ↗</a>
+          </div>
+        </div>
+
+        <div class="archive-item" data-year="2023">
+          <button class="archive-header">
+            <span class="archive-year">2023</span>
+            <span class="archive-summary">18 schools · 152 students · Champion: [School]</span>
+            <svg class="archive-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="archive-body">
+            <table class="results-table">
+              <thead><tr><th>Place</th><th>School</th><th>Team Score</th></tr></thead>
+              <tbody>
+                <tr><td>🥇 1st</td><td>[School Name]</td><td>[Score]</td></tr>
+                <tr><td>🥈 2nd</td><td>[School Name]</td><td>[Score]</td></tr>
+                <tr><td>🥉 3rd</td><td>[School Name]</td><td>[Score]</td></tr>
+              </tbody>
+            </table>
+            <a href="#" class="archive-link">View full results PDF ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ───────────────────────────────────────────────────────── -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-label">Common Questions</div>
+      <h2>Frequently Asked <span class="accent-gold">Questions</span></h2>
+      <div class="faq-columns">
+        <div class="faq-list" id="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question">Who can participate in TKAMT?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>TKAMT is open to any high school student in grades 9–12. Each school may register up to two full teams of 6 students, plus additional individual competitors. There are no geographic restrictions — schools from anywhere are welcome to attend.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">When does registration open?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Registration for TKAMT 2027 will open in Fall 2026. Fill out the interest form below and we'll email you the moment registration opens. Spots fill up fast — last year we reached capacity within two weeks of opening.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Is there a registration fee?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. The registration fee is <strong>$[X] per team</strong> (covers up to 6 students). Individual competitors may register for <strong>$[X] per person</strong>. Fee details and payment instructions will be sent upon registration confirmation. Financial hardship waivers are available — contact us to inquire.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">What topics are covered on the tests?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>TKAMT problems span the standard AMC/MATHCOUNTS curriculum: <strong>Algebra, Geometry, Number Theory, Combinatorics, and Probability</strong>. Difficulty ranges from accessible (AMC 10 level) to challenging (AIME level). No calculus is required. A full topic outline is published on the Resources page each fall.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Are calculators allowed?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Calculators are <strong>not permitted</strong> in the Sprint, Target, or Countdown Rounds. The Team Round allows scientific (non-CAS) calculators. All answers in calculator-free rounds are exact integers or simple fractions.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Where is the tournament held?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>TKAMT is held on The King's Academy campus. The address and detailed arrival/parking instructions will be sent to all registered teams. The venue is fully accessible and provides competition rooms, a common area for students, and a seating area for coaches and parents.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Can coaches/parents stay and watch?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! Coaches and parents are welcome to attend. There is a designated lounge area with light refreshments. During the Countdown Round, everyone is invited to watch — it's the highlight of the day. The Awards Ceremony is open to all attendees.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">What should students bring?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Students should bring: multiple sharpened pencils, an eraser, a school-issued ID or signed permission slip, and their own lunch (or money for the on-site concessions). Scratch paper is provided. Students should wear comfortable clothing — they'll be seated for several hours.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">How are teams and individuals scored?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Team scores are calculated as a weighted sum of all events: Sprint (40%), Target (20%), Team Round (20%), and Relay (20%). Individual standings are ranked by Sprint + Target scores combined. Ties are broken by the number of correct answers in tiebreaker problems.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">How do I contact the organizers?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Email us at <a href="mailto:tkamt@tka.edu">tkamt@tka.edu</a>. We aim to respond within 48 hours. For urgent matters closer to tournament day, a phone contact will be provided to registered teams.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── REGISTER / INTEREST FORM ─────────────────────────────────── -->
+  <section id="register" class="register-section">
+    <div class="container">
+      <div class="section-label light">Get Early Access</div>
+      <h2 class="light">Stay in the <span class="accent-gold">Loop</span></h2>
+      <p class="section-intro light">Registration opens Fall 2026. Drop your info below and we'll reach out the moment spots open — plus send you practice resources over the summer.</p>
+
+      <div class="register-wrap">
+        <div class="register-benefits">
+          <h3>Why sign up early?</h3>
+          <ul>
+            <li><span class="check">✓</span> First to know when registration opens</li>
+            <li><span class="check">✓</span> Access to 2026 practice problem sets</li>
+            <li><span class="check">✓</span> Tournament day logistics updates</li>
+            <li><span class="check">✓</span> Capacity is limited — don't miss out</li>
+          </ul>
+          <div class="register-count">
+            <span class="register-count-num" id="signupCount">—</span>
+            <span class="register-count-label">schools already interested</span>
+          </div>
+        </div>
+
+        <div class="form-card" id="form-card">
+          <!-- Step 1: Form -->
+          <div id="form-step" class="form-step active">
+            <h3>Express Interest</h3>
+            <p class="form-sub">No commitment — just let us know you're in.</p>
+            <form id="interest-form" novalidate>
+              <div class="form-row">
+                <div class="field-group">
+                  <label for="field-name">Your Name <span class="req">*</span></label>
+                  <input id="field-name" name="name" type="text" placeholder="Jane Smith" autocomplete="name" required />
+                  <span class="field-error" id="err-name"></span>
+                </div>
+                <div class="field-group">
+                  <label for="field-email">Email Address <span class="req">*</span></label>
+                  <input id="field-email" name="email" type="email" placeholder="jane@school.edu" autocomplete="email" required />
+                  <span class="field-error" id="err-email"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field-group">
+                  <label for="field-school">School Name <span class="req">*</span></label>
+                  <input id="field-school" name="school" type="text" placeholder="Lincoln High School" required />
+                  <span class="field-error" id="err-school"></span>
+                </div>
+                <div class="field-group">
+                  <label for="field-role">Your Role <span class="req">*</span></label>
+                  <select id="field-role" name="role" required>
+                    <option value="" disabled selected>Select one…</option>
+                    <option value="Coach / Teacher">Coach / Teacher</option>
+                    <option value="Student">Student</option>
+                    <option value="Parent">Parent</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <span class="field-error" id="err-role"></span>
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="field-teams">Estimated number of teams attending</label>
+                <select id="field-teams" name="teams">
+                  <option value="" selected>Not sure yet</option>
+                  <option value="1">1 team (up to 6 students)</option>
+                  <option value="2">2 teams (up to 12 students)</option>
+                  <option value="3+">3+ teams</option>
+                  <option value="Individuals only">Individuals only</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label for="field-hear">How did you hear about TKAMT?</label>
+                <select id="field-hear" name="hear">
+                  <option value="" selected>Select…</option>
+                  <option value="Coach / Teacher">From a coach or teacher</option>
+                  <option value="Friend / Student">From a friend or student</option>
+                  <option value="AoPS / Math forum">AoPS or math forum</option>
+                  <option value="Social media">Social media</option>
+                  <option value="Returning competitor">We competed before</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit">
+                <span id="btn-text">Count Me In</span>
+                <svg id="btn-spinner" class="spin hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </button>
+              <p class="form-privacy">We'll only use your email to send TKAMT updates. No spam, ever.</p>
+              <p class="form-error-global hidden" id="form-error-global">Something went wrong — please try again or email us at <a href="mailto:tkamt@tka.edu">tkamt@tka.edu</a>.</p>
+            </form>
+          </div>
+
+          <!-- Step 2: Success -->
+          <div id="success-step" class="form-step">
+            <div class="success-icon">✓</div>
+            <h3>You're on the list!</h3>
+            <p>Thanks, <strong id="success-name"></strong>. We'll email <strong id="success-email"></strong> the moment registration opens for TKAMT 2027.</p>
+            <p class="success-sub">In the meantime, check out past tournament problems in the <a href="#archive">archive</a> to start preparing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">TKAMT <span>2027</span></div>
+        <p>Hosted by The King's Academy<br/>Mathematics Department</p>
+        <a href="mailto:tkamt@tka.edu" class="footer-email">tkamt@tka.edu</a>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#archive">Archive</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#register">Register Interest</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Past Tournaments</h4>
+        <ul>
+          <li><a href="#archive">TKAMT 2026</a></li>
+          <li><a href="#archive">TKAMT 2025</a></li>
+          <li><a href="#archive">TKAMT 2024</a></li>
+          <li><a href="#archive">TKAMT 2023</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <p class="footer-social-note">Add your social handles below.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2027 TKA Math Tournament · The King's Academy · All Rights Reserved</p>
+        <p class="footer-analytics-note">This site uses Google Analytics to count visitors. No personal data is collected without your consent.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
