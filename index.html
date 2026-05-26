@@ -4,10 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TKAMT 2027 | TKA Math Tournament</title>
-  <meta name="description" content="The 5th annual TKA Math Tournament (TKAMT) — a student-run middle school math competition hosted by The King's Academy in Sunnyvale, CA. Register your school for 2027." />
+  <meta name="description" content="The 5th annual TKA Math Tournament — a student-run middle school math competition at The King's Academy in Sunnyvale, CA. Register your school for 2027." />
 
-  <!-- Google Analytics 4 — replace G-XXXXXXXXXX with your Measurement ID -->
-  <!-- Get one free at analytics.google.com → Create property → copy Measurement ID -->
+  <!-- Google Analytics 4 — replace G-XXXXXXXXXX with your Measurement ID from analytics.google.com -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -19,24 +18,23 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- ─── ANNOUNCEMENT BAR ─────────────────────────────────────────── -->
+  <!-- ─── ANNOUNCE BAR ───────────────────────────────────────────── -->
   <div id="announce-bar">
-    <span>🏆 2026 TKAMT Results are in! 19 schools · 61 teams · 222 students</span>
-    <a href="#results-2026" class="announce-link">See Results →</a>
-    <button id="announce-close" aria-label="Close">✕</button>
+    🏆&nbsp; 2026 TKAMT Results are live — 19 schools · 61 teams · 222 students
+    <a href="#stats" class="announce-link">See Results</a>
+    <button id="announce-close" aria-label="Dismiss">✕</button>
   </div>
 
-  <!-- ─── NAV ─────────────────────────────────────────────────────── -->
+  <!-- ─── NAV ───────────────────────────────────────────────────── -->
   <nav id="navbar">
     <div class="nav-inner">
       <a class="nav-logo" href="#hero">
-        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDiOzmowEYp67ScfpRsfSA55akTiPU555ZhEKUd-G-RqKVhBSeACmGSOHMp755wnjehgqIwUHOrcJbdYFrUQH8BXoE6WwyzNANGtLWbohqseKWYyXd76AS62tK8mgpQptP0DfRN6ajKf4uaZmlKKc15B_p6XfKzYvWczsFgNo7THTuLd3wKsxy2=w400"
-             alt="TKAMT Logo" class="nav-logo-img" />
-        <span class="nav-logo-text">TKAMT <span class="nav-logo-year">2027</span></span>
+        <img src="assets/photos/logo_2026.png" alt="TKAMT" class="nav-logo-img" />
+        <span class="nav-logo-text">TKAMT<span class="nav-logo-year">2027</span></span>
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -47,7 +45,7 @@
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#register" class="nav-cta">Register Interest</a></li>
       </ul>
-      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -62,229 +60,231 @@
     </ul>
   </nav>
 
-  <!-- ─── HERO ─────────────────────────────────────────────────────── -->
+  <!-- ─── HERO ───────────────────────────────────────────────────── -->
   <section id="hero">
     <div class="hero-img-bg">
-      <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUB4tN3GhsRQkkRZOsHr3ZdVf8BSSipmqbSWNJk9kt1Pl_DYdj1-6MfQI5GU5XZrZ8f4PeknM3njO9uMHAocHiOfHzYv1mthHp2cFNLyUw6RKi1gsjStfqLB41jsAW53FR6zSQwMp9NZidnBXbCvPE7WmpN3nuKFHubMqREPe8C6-dNlXGhAGeFhFpE_l7rRnW-Y-OZfCLnSkUqH_-y7xmD6f29yu9P4MQ=w1280"
-           alt="TKA Math Tournament" class="hero-bg-photo" />
+      <img src="assets/photos/hero_gym.png" alt="TKA Math Tournament competitors" class="hero-bg-photo" />
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
-      <div class="hero-badge">5th Annual · Coming 2027</div>
-      <h1>TKA Math<br /><span class="hero-accent">Tournament</span></h1>
-      <p class="hero-sub">A student-run math competition for middle schoolers,<br/>hosted by The King's Academy in Sunnyvale, CA.</p>
-      <div class="hero-date-box">
-        <div class="date-item">
-          <span class="date-label">Date</span>
-          <span class="date-val">Winter 2027<br/><small>Exact date TBA</small></span>
+      <div class="hero-eyebrow">5th Annual &nbsp;·&nbsp; Coming Winter 2027</div>
+      <h1>TKA Math<br /><em>Tournament</em></h1>
+      <p class="hero-sub">A student-run math competition for middle schoolers, hosted by The King's Academy in Sunnyvale, CA.</p>
+      <div class="hero-meta">
+        <div class="hero-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Winter 2027 · Date TBA
         </div>
-        <div class="date-divider"></div>
-        <div class="date-item">
-          <span class="date-label">Location</span>
-          <span class="date-val">The King's Academy<br/><small>Sunnyvale, CA</small></span>
+        <div class="hero-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          The King's Academy, Sunnyvale CA
         </div>
-        <div class="date-divider"></div>
-        <div class="date-item">
-          <span class="date-label">Registration</span>
-          <span class="date-val">Opens Fall 2026<br/><small>$40 per team</small></span>
+        <div class="hero-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Grades 6–8 · $40 per team
         </div>
       </div>
-      <div class="hero-cta-group">
-        <a href="#register" class="btn btn-primary">Get Notified</a>
-        <a href="#format" class="btn btn-ghost">View Format</a>
+      <div class="hero-btns">
+        <a href="#register" class="btn btn-gold">Get Notified</a>
+        <a href="#format" class="btn btn-outline">View Format</a>
       </div>
     </div>
-    <div class="hero-scroll-hint">
+    <div class="hero-scroll">
       <span>scroll</span>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
     </div>
   </section>
 
-  <!-- ─── ABOUT ─────────────────────────────────────────────────────── -->
+  <!-- ─── ABOUT ──────────────────────────────────────────────────── -->
   <section id="about">
     <div class="container">
-      <div class="section-label">About the Tournament</div>
-      <h2>Student-Run. Community-Driven.<br/><span class="accent">Problem-Solving.</span></h2>
+      <span class="tag">About the Tournament</span>
+      <div class="section-rule"></div>
+      <h2>Student-Run.<br/>Community-First.</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>The TKA Math Tournament (TKAMT) is a local, student-run math tournament for middle school students, hosted by <a href="https://www.tka.org/" target="_blank" rel="noopener" class="inline-link">The King's Academy</a> in Sunnyvale, CA. What began as a small community event has grown into one of the most anticipated middle school math competitions in the Bay Area.</p>
-          <p>The tournament is intended for students in grades 6–8, though younger students are also welcome. Schools may register up to six teams per school, with each team consisting of 3 or 4 students. Teams may mix grades — students don't have to be from the same grade, but they must be from the same school.</p>
-          <p>We especially encourage schools with newer or less established competition math communities to attend. All participants must attend through their school — non-school, for-profit organizations are not permitted.</p>
-          <div class="about-highlights">
-            <div class="highlight-chip">🏫 Student-Run</div>
-            <div class="highlight-chip">📐 Grades 6–8</div>
-            <div class="highlight-chip">🤝 3–4 per team</div>
-            <div class="highlight-chip">📍 Sunnyvale, CA</div>
-            <div class="highlight-chip">💰 $40 per team</div>
+          <p>The TKA Math Tournament (TKAMT) is a local, student-run math competition for middle school students, hosted by <a href="https://www.tka.org/" target="_blank" rel="noopener" class="inline-link">The King's Academy</a> in Sunnyvale, CA. What began as a small community event has grown into one of the most anticipated middle school math competitions in the Bay Area.</p>
+          <p>The tournament is designed for students in grades 6–8, though younger students are also welcome. Schools may send up to six teams of 3–4 students each. Teams may mix grades — students don't have to be from the same grade, but they must be from the same school.</p>
+          <p>We especially encourage schools with newer or less established competition math communities to attend. All participants must come through their school — non-school, for-profit organizations may not enter teams.</p>
+          <div class="about-chips">
+            <span class="chip">🏫 Student-Run</span>
+            <span class="chip">📐 Grades 6–8</span>
+            <span class="chip">👥 3–4 per team</span>
+            <span class="chip">📍 Sunnyvale, CA</span>
+            <span class="chip">💰 $40 per team</span>
           </div>
         </div>
-        <div class="about-image-wrap">
-          <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUBCa8VljvN_lDWpl2wKq3CaHv_PLW4LSCwr9zRlTwdbrinfHvgaMLZVSGLC4eF8xwoVJD2u5wte9rZ5ddKmpscK6Rc4ieu8Abil13Rn3ckXwjxdl5iUyCwfichOxZqWo1eBdpRFYbiYaXR2nTM_R71h5_zrsjUWzYk5as00OCj8tU15N_2ThQ9jT-MYBM0geTi3PPVKQb7HNngQ07xLgQa2nSRcD70850jhI=w1280"
-               alt="Some of the 2025 TKAMT staff"
-               class="about-photo-real" />
+        <div class="about-photo-wrap">
+          <img src="assets/photos/guts_closeup.png" alt="Students working on Guts Round problems" class="about-photo-real" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── 2026 STATS ──────────────────────────────────────────────── -->
-  <section id="stats" class="stats-section">
+  <!-- ─── STATS / 2026 RECAP ─────────────────────────────────────── -->
+  <section id="stats">
     <div class="container">
-      <div class="section-label light">2026 Tournament Recap</div>
-      <h2 class="light">Last Year by the <span class="accent-gold">Numbers</span></h2>
-      <div class="stats-grid">
-        <div class="stat-card">
+      <span class="tag" style="color:var(--gold-bright)">2026 Tournament Recap</span>
+      <div class="section-rule"></div>
+      <h2 style="color:white">By the Numbers</h2>
+      <p class="section-intro" style="color:rgba(255,255,255,.55)">The 4th annual TKAMT was held January 24, 2026 at The King's Academy.</p>
+
+      <div class="stats-row">
+        <div class="stat-cell">
           <div class="stat-number" data-target="19">19</div>
-          <div class="stat-label">Schools Competed</div>
+          <div class="stat-label">Schools</div>
         </div>
-        <div class="stat-card">
+        <div class="stat-cell">
           <div class="stat-number" data-target="61">61</div>
           <div class="stat-label">Teams</div>
         </div>
-        <div class="stat-card">
+        <div class="stat-cell">
           <div class="stat-number" data-target="222">222</div>
-          <div class="stat-label">Student Competitors</div>
+          <div class="stat-label">Competitors</div>
         </div>
-        <div class="stat-card">
+        <div class="stat-cell">
           <div class="stat-number" data-target="3">3</div>
           <div class="stat-label">Rounds</div>
         </div>
       </div>
 
-      <!-- Score distribution charts -->
-      <div class="score-dist-grid">
-        <div class="score-dist-card">
-          <h3>Individual Round Score Distribution</h3>
-          <p class="score-meta">Top: 19 · Average: 10.48 · Median: 11</p>
-          <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCtXnB15joQdniCpzMzGu3og5o3kdS5zQse-_jgQtiIU--ZNso6OmMDBrGCFEzADIw39C9nyb7w5VQlXjXT-VvFz8d-yHF-c46KBHoXKgIpQlnMdFJu3DbrKiR_IGUZljc7PXa3cPj6zEo_0dLhyKTrHAlckdRS86F-DfpZgtmXzdlVgZSknlLSrXmaKsMKqEMB4sOQCD9N-9KsitWTKZ1IOnQoCOGl5FVZimr=w1280"
-               alt="Individual Round Score Distribution 2026" class="dist-chart" />
+      <div class="charts-row">
+        <div class="chart-card">
+          <div class="chart-header">
+            <h4>Individual Round Score Distribution</h4>
+            <div class="chart-meta">Top: 19 &nbsp;·&nbsp; Avg: 10.48 &nbsp;·&nbsp; Median: 11</div>
+          </div>
+          <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCtXnB15joQdniCpzMzGu3og5o3kdS5zQse-_jgQtiIU--ZNso6OmMDBrGCFEzADIw39C9nyb7w5VQlXjXT-VvFz8d-yHF-c46KBHoXKgIpQlnMdFJu3DbrKiR_IGUZljc7PXa3cPj6zEo_0dLhyKTrHAlckdRS86F-DfpZgtmXzdlVgZSknlLSrXmaKsMKqEMB4sOQCD9N-9KsitWTKZ1IOnQoCOGl5FVZimr=w1280" alt="Individual Round Score Distribution" class="chart-img" />
         </div>
-        <div class="score-dist-card">
-          <h3>Guts Round Score Distribution</h3>
-          <p class="score-meta">Top: 168 · Average: 45.15 · Median: 32</p>
-          <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUAkcUJg29Jty--fToGHjmlV7MuMeZU4E6nc3Ea8GCOdOdSJt2R7X6omqVfOZpMOgWS1h8ZocBUI0IaLfZRsdMj1m4XU7__C_w7Q7xB6rZ0AV9spIFOtf4G_2YVSXkaqwPiBSHCEWMJ4XAwfvt2eAFYjt6Q-XpJit80r2w_KCFBbB9yDk6Pelmb-DBvbGz5vqtvHMut12zETljBd-6a2sDJysTAKRmMpsg3LVM=w1280"
-               alt="Guts Round Score Distribution 2026" class="dist-chart" />
+        <div class="chart-card">
+          <div class="chart-header">
+            <h4>Guts Round Score Distribution</h4>
+            <div class="chart-meta">Top: 168 &nbsp;·&nbsp; Avg: 45.15 &nbsp;·&nbsp; Median: 32</div>
+          </div>
+          <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUAkcUJg29Jty--fToGHjmlV7MuMeZU4E6nc3Ea8GCOdOdSJt2R7X6omqVfOZpMOgWS1h8ZocBUI0IaLfZRsdMj1m4XU7__C_w7Q7xB6rZ0AV9spIFOtf4G_2YVSXkaqwPiBSHCEWMJ4XAwfvt2eAFYjt6Q-XpJit80r2w_KCFBbB9yDk6Pelmb-DBvbGz5vqtvHMut12zETljBd-6a2sDJysTAKRmMpsg3LVM=w1280" alt="Guts Round Score Distribution" class="chart-img" />
         </div>
       </div>
 
-      <!-- 2026 Results -->
-      <div id="results-2026" class="results-section">
-        <h3 class="results-heading">2026 Results</h3>
-        <div class="results-grid">
+      <div class="results-wrap">
+        <div class="results-heading">2026 Results</div>
+        <div class="results-cols">
 
-          <div class="results-col">
-            <h4 class="results-sub">Individual Round — 6th Grade &amp; Under</h4>
-            <ol class="results-list">
-              <li><span class="place p1">1</span> Alvin Wang <span class="school-tag">Helios</span></li>
-              <li><span class="place p2">2</span> Marshall Huang <span class="school-tag">BISV</span></li>
-              <li><span class="place p3">3</span> Jayden Zhu <span class="school-tag">Challenger SP</span></li>
-              <li><span class="place">4</span> Jayden Kim <span class="school-tag">Dilworth</span></li>
-              <li><span class="place">5</span> Rohan Iyer <span class="school-tag">Helios</span></li>
-              <li><span class="place">6</span> Calvin Dinh <span class="school-tag">DCS</span></li>
-            </ol>
+          <div class="results-card">
+            <div class="results-grade">Individual — 6th &amp; Under</div>
+            <div class="result-row"><span class="medal m1">1</span><span class="result-name">Alvin Wang</span><span class="result-school">Helios</span></div>
+            <div class="result-row"><span class="medal m2">2</span><span class="result-name">Marshall Huang</span><span class="result-school">BISV</span></div>
+            <div class="result-row"><span class="medal m3">3</span><span class="result-name">Jayden Zhu</span><span class="result-school">Challenger SP</span></div>
+            <div class="result-row"><span class="medal mn">4</span><span class="result-name">Jayden Kim</span><span class="result-school">Dilworth</span></div>
+            <div class="result-row"><span class="medal mn">5</span><span class="result-name">Rohan Iyer</span><span class="result-school">Helios</span></div>
+            <div class="result-row"><span class="medal mn">6</span><span class="result-name">Calvin Dinh</span><span class="result-school">DCS</span></div>
           </div>
 
-          <div class="results-col">
-            <h4 class="results-sub">Individual Round — 7th Grade</h4>
-            <ol class="results-list">
-              <li><span class="place p1">1</span> Minkee Cho <span class="school-tag">Peterson</span></li>
-              <li><span class="place p2">2</span> Weiwei Wang <span class="school-tag">Hyde</span></li>
-              <li><span class="place p3">3</span> James Liang-Cheng <span class="school-tag">DCS</span></li>
-              <li><span class="place">4</span> Bohan Li <span class="school-tag">Redwood</span></li>
-              <li><span class="place">5</span> Tiffany Han <span class="school-tag">BISV</span></li>
-              <li><span class="place">6</span> Henry Han <span class="school-tag">BISV</span></li>
-            </ol>
+          <div class="results-card">
+            <div class="results-grade">Individual — 7th Grade</div>
+            <div class="result-row"><span class="medal m1">1</span><span class="result-name">Minkee Cho</span><span class="result-school">Peterson</span></div>
+            <div class="result-row"><span class="medal m2">2</span><span class="result-name">Weiwei Wang</span><span class="result-school">Hyde</span></div>
+            <div class="result-row"><span class="medal m3">3</span><span class="result-name">James Liang-Cheng</span><span class="result-school">DCS</span></div>
+            <div class="result-row"><span class="medal mn">4</span><span class="result-name">Bohan Li</span><span class="result-school">Redwood</span></div>
+            <div class="result-row"><span class="medal mn">5</span><span class="result-name">Tiffany Han</span><span class="result-school">BISV</span></div>
+            <div class="result-row"><span class="medal mn">6</span><span class="result-name">Henry Han</span><span class="result-school">BISV</span></div>
           </div>
 
-          <div class="results-col">
-            <h4 class="results-sub">Individual Round — 8th Grade</h4>
-            <ol class="results-list">
-              <li><span class="place p1">1</span> Justin Kim <span class="school-tag">Miller</span></li>
-              <li><span class="place p2">2</span> Minxing Yang <span class="school-tag">Sierramont</span></li>
-              <li><span class="place p3">3</span> Allen Li <span class="school-tag">Rancho</span></li>
-              <li><span class="place">4</span> Arthur Chang <span class="school-tag">Miller</span></li>
-              <li><span class="place">5</span> William Tao <span class="school-tag">Miller</span></li>
-              <li><span class="place">6</span> Pranav Krishnapuram <span class="school-tag">Tessellations</span></li>
-            </ol>
+          <div class="results-card">
+            <div class="results-grade">Individual — 8th Grade</div>
+            <div class="result-row"><span class="medal m1">1</span><span class="result-name">Justin Kim</span><span class="result-school">Miller</span></div>
+            <div class="result-row"><span class="medal m2">2</span><span class="result-name">Minxing Yang</span><span class="result-school">Sierramont</span></div>
+            <div class="result-row"><span class="medal m3">3</span><span class="result-name">Allen Li</span><span class="result-school">Rancho</span></div>
+            <div class="result-row"><span class="medal mn">4</span><span class="result-name">Arthur Chang</span><span class="result-school">Miller</span></div>
+            <div class="result-row"><span class="medal mn">5</span><span class="result-name">William Tao</span><span class="result-school">Miller</span></div>
+            <div class="result-row"><span class="medal mn">6</span><span class="result-name">Pranav Krishnapuram</span><span class="result-school">Tessellations</span></div>
           </div>
 
-          <div class="results-col results-col-wide">
-            <h4 class="results-sub">Guts Round — Top 10 Teams</h4>
-            <ol class="results-list guts-list">
-              <li><span class="place p1">1</span> <strong>Team 1</strong> <span class="school-tag">Miller</span> <span class="team-members">Daniel Hu, Justin Kim, Arthur Chang, William Tao</span></li>
-              <li><span class="place p2">2</span> <strong>Sierramont E2MC</strong> <span class="school-tag">Sierramont</span> <span class="team-members">Eli Zhang, Minxing Yang, Caroline Guan, Ella Park</span></li>
-              <li><span class="place p3">3</span> <strong>Tessie 2</strong> <span class="school-tag">Tessellations</span> <span class="team-members">Pranav Krishnapuram, Beatrice Hung, Vivaan Loiwal, Aarav Shah</span></li>
-              <li><span class="place">4</span> <strong>Rancho Milpitas Falcons</strong> <span class="school-tag">Rancho</span></li>
-              <li><span class="place">5</span> <strong>BISV Bobcat Team 1</strong> <span class="school-tag">BISV</span></li>
-              <li><span class="place">6</span> <strong>Hyde Lions</strong> <span class="school-tag">Hyde</span></li>
-              <li><span class="place">7</span> <strong>furrier</strong> <span class="school-tag">TKA</span></li>
-              <li><span class="place">8</span> <strong>Cookies!</strong> <span class="school-tag">Discovery CS</span></li>
-              <li><span class="place">9</span> <strong>RMS TEAM A</strong> <span class="school-tag">Redwood</span></li>
-              <li><span class="place">10</span> <strong>BISV Bobcat Team 2</strong> <span class="school-tag">BISV</span></li>
-            </ol>
+          <div class="results-card guts-card">
+            <div class="results-grade">Guts Round — Top 10 Teams</div>
+            <div class="guts-grid">
+              <div class="guts-row"><span class="medal m1">1</span><span class="guts-name">Team 1</span><span class="result-school">Miller</span><span class="guts-members">Daniel Hu, Justin Kim, Arthur Chang, William Tao</span></div>
+              <div class="guts-row"><span class="medal m2">2</span><span class="guts-name">Sierramont E2MC</span><span class="result-school">Sierramont</span><span class="guts-members">Eli Zhang, Minxing Yang, Caroline Guan, Ella Park</span></div>
+              <div class="guts-row"><span class="medal m3">3</span><span class="guts-name">Tessie 2</span><span class="result-school">Tessellations</span><span class="guts-members">Pranav Krishnapuram, Beatrice Hung, Vivaan Loiwal, Aarav Shah</span></div>
+              <div class="guts-row"><span class="medal mn">4</span><span class="guts-name">Rancho Milpitas Falcons</span><span class="result-school">Rancho</span></div>
+              <div class="guts-row"><span class="medal mn">5</span><span class="guts-name">BISV Bobcat Team 1</span><span class="result-school">BISV</span></div>
+              <div class="guts-row"><span class="medal mn">6</span><span class="guts-name">Hyde Lions</span><span class="result-school">Hyde</span></div>
+              <div class="guts-row"><span class="medal mn">7</span><span class="guts-name">furrier</span><span class="result-school">TKA</span></div>
+              <div class="guts-row"><span class="medal mn">8</span><span class="guts-name">Cookies!</span><span class="result-school">Discovery CS</span></div>
+              <div class="guts-row"><span class="medal mn">9</span><span class="guts-name">RMS TEAM A</span><span class="result-school">Redwood</span></div>
+              <div class="guts-row"><span class="medal mn">10</span><span class="guts-name">BISV Bobcat Team 2</span><span class="result-school">BISV</span></div>
+            </div>
           </div>
 
         </div>
 
-        <div class="jeopardy-winner">
-          <div class="jw-trophy">🏆</div>
-          <div class="jw-text">
-            <span class="jw-label">Jeopardy Countdown Champion</span>
-            <span class="jw-name">Team 1 — Miller</span>
-            <span class="jw-members">Daniel Hu, Justin Kim, Arthur Chang, William Tao</span>
-            <span class="jw-score">Final balance: $3,200.01</span>
+        <div class="jeopardy-banner">
+          <div class="jb-icon">🏆</div>
+          <div>
+            <div class="jb-label">Jeopardy Countdown Champion</div>
+            <div class="jb-name">Team 1 — Miller Middle School</div>
+            <div class="jb-sub">Daniel Hu · Justin Kim · Arthur Chang · William Tao &nbsp;·&nbsp; Final balance: $3,200.01</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── FORMAT ───────────────────────────────────────────────────── -->
+  <!-- ─── FORMAT ─────────────────────────────────────────────────── -->
   <section id="format">
     <div class="container">
-      <div class="section-label">Competition Format</div>
-      <h2>Three Rounds, <span class="accent">One Champion</span></h2>
-      <p class="section-intro">TKAMT is structured as a half-day invitational. Three distinct rounds test individual knowledge, team strategy, and real-time speed.</p>
-      <div class="format-grid">
+      <span class="tag">Competition Format</span>
+      <div class="section-rule"></div>
+      <h2>Three Rounds,<br/>One Champion</h2>
+      <p class="section-intro">TKAMT is a half-day invitational. Three distinct rounds test individual knowledge, team strategy, and real-time speed under pressure.</p>
+      <div class="format-cards">
 
         <div class="format-card">
-          <div class="format-img-wrap">
-            <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUAkxDJ1YAk6FC7JmpVstgGElZZULAHHp9UlYY7rgim2Mp8UFw7yZtIoHItAy3P9bzM1GNd82ZgcA1iBxB7SWIC2enTM3YD553XnCg7a0-bMaOsCuNHtlZVyeZvfP44VCTyFDfQLKOux35_WTXrI8YjdYUQYWDf_b5BOG4yUrxJ1zbIakKViwG5Yfom0PgRuN_E0Rm80omOrNgaaSKcDXypC854qLjXyyW3J1wA=w1280"
-                 alt="Individual Round" />
+          <div class="fc-img">
+            <img src="assets/photos/hero_gym.png" alt="Individual Round in the TKA gymnasium" />
+            <div class="fc-num">01</div>
           </div>
-          <div class="format-body">
-            <div class="format-num">01</div>
+          <div class="fc-body">
             <h3>Individual Round</h3>
-            <p>50 minutes · 20 short-answer questions. Questions range across all standard topics — algebra, geometry, number theory, and counting &amp; probability. Scored individually; top 3 per grade receive awards.</p>
-            <div class="format-tags"><span>Individual</span><span>50 min</span><span>20 questions</span></div>
+            <p>50 minutes · 20 short-answer questions across all standard topics — algebra, geometry, number theory, and counting &amp; probability. Scored individually; top 3 per grade receive awards.</p>
+            <div class="fc-tags">
+              <span class="fc-tag">Individual</span>
+              <span class="fc-tag">50 min</span>
+              <span class="fc-tag">20 questions</span>
+            </div>
           </div>
         </div>
 
         <div class="format-card">
-          <div class="format-img-wrap">
-            <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUAUEwdrsWOayXggR3p853AeXBrS6q0K076YwXn479nD3nCmjoYXTQhcT7PAOfugSfvNK4-YpHroLnwMYlj8UmbVAYyqXtNQhdpj4eN2lVDsBMPcZ8eg6yO11Keh699FTpGBpGojt2nJ663thh3KCHg7VK5I-cGSuUFsKlAxOhCsw94CwsUs_Z_eCIkdg6n8kehCA9rxLzJc1CxLgA_yNqm3_LK77_mEt1lx=w1280"
-                 alt="Guts Round" />
+          <div class="fc-img">
+            <img src="assets/photos/guts_round.png" alt="Guts Round — teams submitting problem sets" />
+            <div class="fc-num">02</div>
           </div>
-          <div class="format-body">
-            <div class="format-num">02</div>
+          <div class="fc-body">
             <h3>Guts Round</h3>
-            <p>1 hour · 8 sets of 3 problems. Teams work together and submit each set before receiving the next. Go fast or take your time — strategy is key. Top 3 teams receive awards.</p>
-            <div class="format-tags"><span>Team</span><span>1 hour</span><span>8 × 3 problems</span></div>
+            <p>1 hour · 8 sets of 3 problems. Teams work together and submit each set before receiving the next. Go fast or take your time — the strategy is yours. Top 3 teams receive awards.</p>
+            <div class="fc-tags">
+              <span class="fc-tag">Team</span>
+              <span class="fc-tag">1 hour</span>
+              <span class="fc-tag">8 × 3 problems</span>
+            </div>
           </div>
         </div>
 
         <div class="format-card">
-          <div class="format-img-wrap">
-            <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUChCe769JkltbGpGNsFhEXwWG1RumfhpmpNoH4tqqqYeuCrcF6gpQE_7tAJY-zXRIKYtpIS7PlNybIJx4ujwbg8rn-mBmHHoAj6qE45DtLwTLwjBgO5V3JcA9kH_-XNJ7iadW1BLwInLWTFW9rJmWBqeH5jVOibaqr2uoxVBxK4FAsRUZusTt0=w1280"
-                 alt="Jeopardy Countdown Round" />
+          <div class="fc-img">
+            <img src="assets/photos/jeopardy_stage.png" alt="Jeopardy Countdown Round on stage" />
+            <div class="fc-num">03</div>
           </div>
-          <div class="format-body">
-            <div class="format-num">03</div>
-            <h3>Jeopardy Countdown Round</h3>
-            <p>Teams buzz in to answer and earn points for correct answers, with deductions for incorrect ones. Features Daily Doubles and a Final Jeopardy. High-energy and crowd-pleasing. 1st place team receives an award.</p>
-            <div class="format-tags"><span>Team</span><span>Buzz-in</span><span>Final Jeopardy</span></div>
+          <div class="fc-body">
+            <h3>Jeopardy Countdown</h3>
+            <p>Teams buzz in to earn points for correct answers and lose points for wrong ones. Features Daily Doubles and a Final Jeopardy. High-energy, live-audience, crowd-pleasing finale.</p>
+            <div class="fc-tags">
+              <span class="fc-tag">Team</span>
+              <span class="fc-tag">Buzz-in</span>
+              <span class="fc-tag">Final Jeopardy</span>
+            </div>
             <a href="https://docs.google.com/document/d/e/2PACX-1vQXY6BFkgTu6cqGggcZkLnzPv3SI-iTB27GW0DjIFdP0pqaKt9AcBilGPh9bTP-HtO85KRk3W7cg0Be/pub"
-               target="_blank" rel="noopener" class="format-rules-link">Full rules &amp; scoring ↗</a>
+               target="_blank" rel="noopener" class="fc-link">Full rules &amp; scoring ↗</a>
           </div>
         </div>
 
@@ -292,149 +292,155 @@
     </div>
   </section>
 
-  <!-- ─── GALLERY ────────────────────────────────────────────────────── -->
-  <section id="gallery" class="gallery-section">
+  <!-- ─── GALLERY ────────────────────────────────────────────────── -->
+  <section id="gallery">
     <div class="container">
-      <div class="section-label">Photo Gallery</div>
-      <h2>Moments from <span class="accent">TKAMT 2025 &amp; 2026</span></h2>
-      <div class="gallery-grid" id="gallery-grid">
-        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDEp49gymEYft2EZcxRdcdw6OyJy2kNrudzqUeOPutQnIeyYveD4WxfybaGdxsi2PzF6zu6QVDQ_s-CKf7jCKnKmL5-6AVlNd4ym-PobZHBgjMfAFP_cYkx3w_4Fvps0FRM0E6uq7HRpqA7dZB7kVZ65vgYgCUOsNjfCMgDAyCSSOGkeKPCBZGOJ54V1CjjG9YhsLexV_1K9UceJsabNzMMH_wjaTkiTfbf=w1280"
-             alt="Guts Round — TKAMT 2025" class="gal-img tall" />
-        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUBce8h5os_G7zoMj2rq6eNfAc9vmyadVDXeca8ImRzx4_g4SP4JBENcQ3w5LnhPRKSHV8sJISQSwLtjYVXCefw9bHBe8rS94YzQiKbQ1EafG4PQJ1aIhGQJl5vkG3je_ZDK-Tu6S0tYuRAjCZOKAxCK9TcaUcOnir9Ggl5j_ojOsBccZssHEns8FFIi738gYACNSFNluf_lpnZxrC2jvJT3s_oau36-nSJOaCY=w1280"
-             alt="Jeopardy Countdown Round — TKAMT 2025" class="gal-img" />
-        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUBCa8VljvN_lDWpl2wKq3CaHv_PLW4LSCwr9zRlTwdbrinfHvgaMLZVSGLC4eF8xwoVJD2u5wte9rZ5ddKmpscK6Rc4ieu8Abil13Rn3ckXwjxdl5iUyCwfichOxZqWo1eBdpRFYbiYaXR2nTM_R71h5_zrsjUWzYk5as00OCj8tU15N_2ThQ9jT-MYBM0geTi3PPVKQb7HNngQ07xLgQa2nSRcD70850jhI=w1280"
-             alt="2025 TKAMT Staff" class="gal-img" />
-        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUD1eVzhC20OQu0bBSiZ8XOq0DSjFnJges2j-CQcItLgXf2XjCQXkZX2ipUHGalBU5t5zNtxZH1dwvBiodgFKNwnrZOWYO1_5SXEiE2F-fuixn9NjHDHNXq9c1tBQ-o0spMoLivZ6Y8t5zvZZvwwK9gQNhgIiCMc331jd226cDWIGNnlFdk-cpvr0oLuMZL7O25c_ETNn7nBCGW0I7QlFZS12ECqG_gq5nm6IK8=w1280"
-             alt="TKAMT 2026" class="gal-img wide" />
-        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCaI-csMU_lSqAOXgEZbG_9zQlWAxVhgEvquiaXXBOjCLzWPdPVI33x_O3IIuihVRqBrvzBEwYm-e0mfQdMZLpoHVSs6VrUdAAybIwjPQi3k0AVrcHDvEyNQq3xql3PwSYu0fuRciQ8PL0gB58eJk5JRLD-PuvcuvCZ20THURWGt-hxalWquhuYQE8=w1280"
-             alt="2026 TKAMT Tournament Day" class="gal-img tall" />
-        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDLu0FJHy8EukZappjBEs7M2jw49mvPLV7DdVJAvxnauySP2XR0kdEj2u1UieAEhHqDZlJRq0lM3-v3TYecrQWBlVqQtXTuByVVD9DVaTWVvF3WR2hqYwJ1uZJXXpG6XrplCEqgYzHXXliDELGPvaRZXWbVdP5AD1SeqmKuBCyDuT86XAXHd_wqV8VQK8M_Vl0LNYqIRXJEWzbh6-bqiXtBEaX_Ss67cg5O2Ro=w1280"
-             alt="2026 Panel Discussion" class="gal-img" />
+      <span class="tag">Photo Gallery</span>
+      <div class="section-rule"></div>
+      <h2>TKAMT in Action</h2>
+      <p class="section-intro">Photos from the 2025 and 2026 tournaments at The King's Academy.</p>
+      <div class="gallery-mosaic" id="gallery-grid">
+        <div class="gm-item gm-1">
+          <img src="assets/photos/jeopardy_stage.png" alt="Jeopardy Countdown Round — teams on stage" />
+          <div class="gm-caption">Jeopardy Countdown Round</div>
+        </div>
+        <div class="gm-item gm-2">
+          <img src="assets/photos/hero_gym.png" alt="Individual Round — full gymnasium" />
+          <div class="gm-caption">Individual Round</div>
+        </div>
+        <div class="gm-item gm-3">
+          <img src="assets/photos/guts_closeup.png" alt="Guts Round close-up" />
+          <div class="gm-caption">Guts Round</div>
+        </div>
+        <div class="gm-item gm-4">
+          <img src="assets/photos/guts_round.png" alt="Guts Round — teams submitting answers" />
+          <div class="gm-caption">Guts Round — answer submission</div>
+        </div>
+        <div class="gm-item gm-5">
+          <img src="assets/photos/jeopardy_side.png" alt="Jeopardy Countdown — side view" />
+          <div class="gm-caption">Jeopardy Countdown</div>
+        </div>
+        <div class="gm-item gm-6">
+          <img src="assets/photos/logo_2026.png" alt="2026 TKAMT — Mobile Games theme" style="object-fit:contain;background:#000;" />
+          <div class="gm-caption">2026 Theme: Mobile Games</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── 2026 PANEL DISCUSSION ─────────────────────────────────────── -->
-  <section id="panel" class="panel-section">
+  <!-- ─── PANEL DISCUSSION ──────────────────────────────────────── -->
+  <section id="panel">
     <div class="container">
-      <div class="section-label">Featured Event</div>
-      <h2>Panel Discussion: <span class="accent">Adapting Math Education<br/>to a Digitalized Generation</span></h2>
-      <p class="section-intro">While students compete, parents and coaches are invited to attend a free panel discussion. The 2026 edition brought together four experts in EdTech, curriculum design, and competition math.</p>
+      <span class="tag">Featured Event</span>
+      <div class="section-rule"></div>
+      <h2>Panel Discussion</h2>
+      <p class="section-intro wide">While students compete, parents and coaches attend a free panel discussion. The 2026 theme was <strong>"Adapting Math Education to a Digitalized Generation"</strong> — moderated by Karissa Tang (TKA '26), featuring four experts in EdTech and math education.</p>
       <div class="panelists-grid">
 
         <div class="panelist-card">
-          <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUD-cxMslVWbVaIY3l217GVJICOIM99lBhphdtx_VPB6RSvi9crB60_It7T98-HbHm2PR9tqlBO0HLgK8EzsIRhcRT0qOxblRPx2DFk2qdWeZYS-qwvg3ZMDaSyesgGyGOV3DKirqMmPj2WwWKpTUwr739jhZp0RKChFmQVSpAu_JcK3Ca15p6DxmQLWozIhZDyyytd02uMLt_q7jRZAu4phnoEGEmVM65L2=w400"
-               alt="Derek Sanders" class="panelist-photo" />
+          <img src="assets/photos/panelist_derek_sanders.png" alt="Derek Sanders" class="panelist-photo" />
           <div class="panelist-info">
             <h3>Derek Sanders</h3>
-            <p class="panelist-title">Senior Manager, ExploreLearning</p>
-            <p class="panelist-bio">Leads adaptive behavior of game-based math activities including Frax. MS in Operations Research from Stanford.</p>
+            <span class="panelist-role">Senior Manager, ExploreLearning</span>
+            <p class="panelist-bio">Leads adaptive behavior of game-based math activities including Frax. MS Operations Research, Stanford. Career spanning EdTech, networking, healthcare, and cybersecurity.</p>
           </div>
         </div>
 
         <div class="panelist-card">
-          <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUB-nWxdWeklerswtSOiPX1J50lD4615EIFTJgsAgU4nmA2ZWJOgQvK9HJguxgnr916Bmk_11wAGU43n5-uLCc7C_Rp0nZzbolXg2kwGeugT1ZORnCXyvtsjC-TCskpzzEBXa5XZQ9wtv4KZj7Gq4RUe0rMuOXz58S-AsOKQ6ViUg520CNWbpXI7bZUlHTLYOPwzNK_oeyFIzieht36FCwMCoBAv9qzZY9VC=w400"
-               alt="Mat Miyashiro" class="panelist-photo" />
+          <img src="assets/photos/panelist_mat_miyashiro.png" alt="Mat Miyashiro" class="panelist-photo" />
           <div class="panelist-info">
             <h3>Mat Miyashiro</h3>
-            <p class="panelist-title">Senior Professional Learning Advisor, Corwin</p>
-            <p class="panelist-bio">Founding teacher at Gompers Preparatory Academy, former math curriculum writer at Pearson. Travels the country modeling best practice in digital classrooms.</p>
+            <span class="panelist-role">Senior Professional Learning Advisor, Corwin</span>
+            <p class="panelist-bio">Founding teacher at Gompers Preparatory Academy for 10 years, former math curriculum writer at Pearson. Models best practice for synchronous and asynchronous learning nationwide.</p>
           </div>
         </div>
 
         <div class="panelist-card">
-          <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCmWKbbWEPnaYEy2FcZ-MhdVKFf0IOimc445bSfFVvykYo0yQmUwCSFWbnfWICfTB4NdtTAt9tbRKVYH7Acuxb-O1mY02r2ZeqQE_GzWn5WWzUmABEX6_MNLg6gOgkT9vU4igL1rwtgZQoW83DF9jc8W3pIVDmp-5ZmCizo8iHVNAy2Osrftufm8x9nQFpxxHOyJQ_Hgj_ztVQF-cuA_je_xorHWaWLXIgQ=w400"
-               alt="Rebecca Hao" class="panelist-photo" />
+          <img src="assets/photos/panelist_rebecca_hao.png" alt="Rebecca Hao" class="panelist-photo" />
           <div class="panelist-info">
             <h3>Rebecca Hao</h3>
-            <p class="panelist-title">Learning Designer &amp; Software Engineer</p>
-            <p class="panelist-bio">Stanford GSE alumna. Former software engineer at Google. Researches generative AI tools for teachers and self-directed learning.</p>
+            <span class="panelist-role">Learning Designer &amp; Software Engineer</span>
+            <p class="panelist-bio">Stanford GSE (Learning Design &amp; Technology). Former software engineer at Google. Researches generative AI tools for teachers and self-directed learning for young adults.</p>
           </div>
         </div>
 
         <div class="panelist-card">
-          <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUABiFrAHus8o-NJpXv4e6yjdBYhS0izSEI6LLjtis23ntifKLwfRL0GsQVu20S2Ec5EeahypNEFOQB2E-3RgKBxxALwMjL_WftXBtF0KPFoGD0sUNGAV9ANsbbrytCy43Ms0USxMcswFrrx41S58xG4q9heSoN_DeiJIiZxoGxl4n_SwRdODOwhh1QuGaC_OWUXeIvc5eU8-d3RhgsWKvBnj8gxquIU9K-BLn4=w400"
-               alt="David Wise" class="panelist-photo" />
+          <img src="assets/photos/panelist_david_wise.png" alt="David Wise" class="panelist-photo" />
           <div class="panelist-info">
             <h3>David Wise</h3>
-            <p class="panelist-title">Math &amp; CS Teacher</p>
-            <p class="panelist-bio">CMU double major in Math &amp; CS. Former engineer at Facebook. 2× USAMO qualifier, 1st place Colorado Mathematical Olympiad, top 100 North America Putnam.</p>
+            <span class="panelist-role">Math &amp; CS Teacher</span>
+            <p class="panelist-bio">CMU (Math &amp; CS double major). Former engineer at Facebook. 2× USAMO qualifier, 1st place Colorado Math Olympiad, top 100 North America Putnam. Passionate about competition math.</p>
           </div>
         </div>
 
       </div>
-      <p class="panel-note">Panel discussions are free and open to all parents and coaches attending the tournament. A Q&amp;A session is included. Stay tuned for the 2027 panel theme!</p>
+      <div class="panel-callout">
+        Panel discussions are free and open to all parents and coaches. Includes audience Q&amp;A. Stay tuned for the 2027 panel theme announcement!
+      </div>
     </div>
   </section>
 
-  <!-- ─── ARCHIVE ────────────────────────────────────────────────────── -->
+  <!-- ─── ARCHIVE ────────────────────────────────────────────────── -->
   <section id="archive">
     <div class="container">
-      <div class="section-label">Past Tournaments</div>
-      <h2>Problem <span class="accent">Archive</span></h2>
-      <p class="section-intro">Practice with real past problems. Click any year to expand and download PDFs.</p>
+      <span class="tag">Problem Archive</span>
+      <div class="section-rule"></div>
+      <h2>Past Problems &amp; Solutions</h2>
+      <p class="section-intro">Download real problems from every TKAMT to sharpen your preparation.</p>
       <div class="archive-list">
 
-        <div class="archive-item open" data-year="2026">
-          <button class="archive-header">
-            <span class="archive-year">2026</span>
-            <span class="archive-summary">19 schools · 61 teams · 222 students · Jan 24, 2026</span>
+        <div class="archive-item open">
+          <button class="archive-btn">
+            <span class="archive-yr">2026</span>
+            <span class="archive-desc">4th Annual · 19 schools · 61 teams · 222 students · Jan 24, 2026</span>
             <svg class="archive-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="archive-body">
-            <ul class="archive-links">
-              <li><a href="https://drive.google.com/file/d/1bPF4g4N359GoXrQaOXfdS4jQhSo9jaI0/view?usp=sharing" target="_blank" rel="noopener">📄 Individual Round Problems</a></li>
-              <li><a href="https://drive.google.com/file/d/11QOYZSnzcU9QYKW8n-4dJ85iGfy13Aql/view?usp=sharing" target="_blank" rel="noopener">📄 Guts Round Problems</a></li>
-              <li><a href="https://drive.google.com/file/d/1ezgECebzKu7ZnDtlB8S4yoNvLhDs3ZMw/view?usp=sharing" target="_blank" rel="noopener">📄 Jeopardy Countdown Round Problems</a></li>
-              <li><a href="https://drive.google.com/file/d/16yizmzkvCrmmPHqGZZ1a7C4KnFxl06-N/view?usp=sharing" target="_blank" rel="noopener">✅ Solutions</a></li>
-            </ul>
+          <div class="archive-links-list">
+            <a href="https://drive.google.com/file/d/1bPF4g4N359GoXrQaOXfdS4jQhSo9jaI0/view?usp=sharing" target="_blank" rel="noopener" class="archive-dl-link">📄 Individual Round</a>
+            <a href="https://drive.google.com/file/d/11QOYZSnzcU9QYKW8n-4dJ85iGfy13Aql/view?usp=sharing" target="_blank" rel="noopener" class="archive-dl-link">📄 Guts Round</a>
+            <a href="https://drive.google.com/file/d/1ezgECebzKu7ZnDtlB8S4yoNvLhDs3ZMw/view?usp=sharing" target="_blank" rel="noopener" class="archive-dl-link">📄 Jeopardy Countdown</a>
+            <a href="https://drive.google.com/file/d/16yizmzkvCrmmPHqGZZ1a7C4KnFxl06-N/view?usp=sharing" target="_blank" rel="noopener" class="archive-dl-link solutions">✅ Solutions</a>
           </div>
         </div>
 
-        <div class="archive-item" data-year="2025">
-          <button class="archive-header">
-            <span class="archive-year">2025</span>
-            <span class="archive-summary">~200 students · over a dozen schools</span>
+        <div class="archive-item">
+          <button class="archive-btn">
+            <span class="archive-yr">2025</span>
+            <span class="archive-desc">3rd Annual · ~200 students · over a dozen schools</span>
             <svg class="archive-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="archive-body">
-            <ul class="archive-links">
-              <li><a href="https://drive.google.com/file/d/1ZxfOuF9Z-c-6DaJlz78LYlIdcBNlO9Lr/view?usp=sharing" target="_blank" rel="noopener">📄 Individual Round Problems</a></li>
-              <li><a href="https://drive.google.com/file/d/11mzHvC_vOC6I2QYzjT2On54xlsA4R8nw/view?usp=sharing" target="_blank" rel="noopener">📄 Guts Round Problems</a></li>
-              <li><a href="https://drive.google.com/file/d/1nayUNKVHUTXe26pvPj_shPQHgCy2to8g/view?usp=sharing" target="_blank" rel="noopener">📄 Jeopardy Countdown Round Problems</a></li>
-              <li><a href="https://drive.google.com/file/d/12n7zwLM_ccN0Y1uGn3-t043u1Ju9TN3j/view?usp=sharing" target="_blank" rel="noopener">✅ Solutions</a></li>
-            </ul>
+          <div class="archive-links-list">
+            <a href="https://drive.google.com/file/d/1ZxfOuF9Z-c-6DaJlz78LYlIdcBNlO9Lr/view?usp=sharing" target="_blank" rel="noopener" class="archive-dl-link">📄 Individual Round</a>
+            <a href="https://drive.google.com/file/d/11mzHvC_vOC6I2QYzjT2On54xlsA4R8nw/view?usp=sharing" target="_blank" rel="noopener" class="archive-dl-link">📄 Guts Round</a>
+            <a href="https://drive.google.com/file/d/1nayUNKVHUTXe26pvPj_shPQHgCy2to8g/view?usp=sharing" target="_blank" rel="noopener" class="archive-dl-link">📄 Jeopardy Countdown</a>
+            <a href="https://drive.google.com/file/d/12n7zwLM_ccN0Y1uGn3-t043u1Ju9TN3j/view?usp=sharing" target="_blank" rel="noopener" class="archive-dl-link solutions">✅ Solutions</a>
           </div>
         </div>
 
-        <div class="archive-item" data-year="2024">
-          <button class="archive-header">
-            <span class="archive-year">2024</span>
-            <span class="archive-summary">2nd Annual TKAMT</span>
+        <div class="archive-item">
+          <button class="archive-btn">
+            <span class="archive-yr">2024</span>
+            <span class="archive-desc">2nd Annual TKAMT</span>
             <svg class="archive-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="archive-body">
-            <ul class="archive-links">
-              <li><a href="https://drive.google.com/file/d/14Tiz4KEU9Z-azW8vKtLaNvoh/view" target="_blank" rel="noopener">📄 Individual Round Problems</a></li>
-              <li><a href="https://drive.google.com/file/d/1lsBsBU6X664EXXQ_3FHY3K6JMC52HisK/view" target="_blank" rel="noopener">📄 Guts Round Problems</a></li>
-              <li><a href="https://drive.google.com/file/d/1-V0krxveQlKsTQ_gkslVbOcWmcCd522D/view" target="_blank" rel="noopener">📄 Jeopardy Countdown Round Problems</a></li>
-              <li><a href="https://drive.google.com/file/d/1KbwUeGOMEJs87zMU5uTklsp-aPbxH9pl/view?usp=sharing" target="_blank" rel="noopener">✅ Solutions</a></li>
-            </ul>
+          <div class="archive-links-list">
+            <a href="https://drive.google.com/file/d/14Tiz4KEU9Z-azW8vKtLaNvoh/view" target="_blank" rel="noopener" class="archive-dl-link">📄 Individual Round</a>
+            <a href="https://drive.google.com/file/d/1lsBsBU6X664EXXQ_3FHY3K6JMC52HisK/view" target="_blank" rel="noopener" class="archive-dl-link">📄 Guts Round</a>
+            <a href="https://drive.google.com/file/d/1-V0krxveQlKsTQ_gkslVbOcWmcCd522D/view" target="_blank" rel="noopener" class="archive-dl-link">📄 Jeopardy Countdown</a>
+            <a href="https://drive.google.com/file/d/1KbwUeGOMEJs87zMU5uTklsp-aPbxH9pl/view?usp=sharing" target="_blank" rel="noopener" class="archive-dl-link solutions">✅ Solutions</a>
           </div>
         </div>
 
-        <div class="archive-item" data-year="2023">
-          <button class="archive-header">
-            <span class="archive-year">2023</span>
-            <span class="archive-summary">1st Annual TKAMT</span>
+        <div class="archive-item">
+          <button class="archive-btn">
+            <span class="archive-yr">2023</span>
+            <span class="archive-desc">1st Annual TKAMT</span>
             <svg class="archive-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="archive-body">
-            <ul class="archive-links">
-              <li><a href="https://drive.google.com/file/d/1-MX5OQU8fOiCqCgwuVxKmjilGK-Z1rJW/view" target="_blank" rel="noopener">📄 Individual Round Problems</a></li>
-              <li><a href="https://drive.google.com/file/d/1msc9K08EIEa3xwW7Gj5-KBkMVv0UgeSB/view" target="_blank" rel="noopener">📄 Guts Round Problems</a></li>
-              <li><a href="https://drive.google.com/file/d/1faj2zXMwVEWx0eO5-pZkTIelsusa8k0o/view" target="_blank" rel="noopener">📄 Jeopardy Countdown Round Problems</a></li>
-            </ul>
+          <div class="archive-links-list">
+            <a href="https://drive.google.com/file/d/1-MX5OQU8fOiCqCgwuVxKmjilGK-Z1rJW/view" target="_blank" rel="noopener" class="archive-dl-link">📄 Individual Round</a>
+            <a href="https://drive.google.com/file/d/1msc9K08EIEa3xwW7Gj5-KBkMVv0UgeSB/view" target="_blank" rel="noopener" class="archive-dl-link">📄 Guts Round</a>
+            <a href="https://drive.google.com/file/d/1faj2zXMwVEWx0eO5-pZkTIelsusa8k0o/view" target="_blank" rel="noopener" class="archive-dl-link">📄 Jeopardy Countdown</a>
           </div>
         </div>
 
@@ -442,265 +448,234 @@
     </div>
   </section>
 
-  <!-- ─── FAQ ───────────────────────────────────────────────────────── -->
-  <section id="faq" class="faq-section">
+  <!-- ─── FAQ ────────────────────────────────────────────────────── -->
+  <section id="faq">
     <div class="container">
-      <div class="section-label">Common Questions</div>
-      <h2>Frequently Asked <span class="accent-gold">Questions</span></h2>
-      <div class="faq-list" id="faq-list">
+      <span class="tag">Common Questions</span>
+      <div class="section-rule"></div>
+      <h2>FAQ</h2>
+      <div class="faq-wrap">
 
         <div class="faq-item">
-          <button class="faq-question">Who can participate in TKAMT?
+          <button class="faq-q">Who can participate?
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer">
-            <p>TKAMT is intended for students in grades 6–8, though younger students are also welcome. All participants must attend through their school — non-school, for-profit organizations are not permitted to enter teams.</p>
-          </div>
+          <div class="faq-a">TKAMT is for students in grades 6–8, though younger students are welcome. All participants must come through their school — non-school, for-profit organizations may not enter teams.</div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">Can parents register instead of a teacher or coach?
+          <button class="faq-q">Can a parent register instead of a teacher or coach?
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer">
-            <p>Yes! However, we ask that one adult register all teams from the same school so we have a single point of contact for your school's teams.</p>
-          </div>
+          <div class="faq-a">Yes, but we ask that one adult register all teams from the same school so we have a single point of contact.</div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">Must teams contain students from only one grade?
+          <button class="faq-q">Must a team be from one grade?
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer">
-            <p>No — students in the same team may be from different grades. The only requirement is that all students on a team must be from the same school.</p>
-          </div>
+          <div class="faq-a">No — students on the same team may be from different grades, as long as they all attend the same school.</div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">Are teams with fewer people at a disadvantage?
+          <button class="faq-q">Are smaller teams at a scoring disadvantage?
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer">
-            <p>No overall team scores are calculated, so teams with fewer people are not at a formal disadvantage. In the team-based rounds (Guts and Jeopardy Countdown), having fewer teammates means fewer hands on the problems, but there is no scoring penalty.</p>
-          </div>
+          <div class="faq-a">No overall team scores are calculated, so there is no formal disadvantage. In team rounds, fewer members means fewer hands on the problems — but no scoring penalty.</div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">Can elementary school students participate?
+          <button class="faq-q">Can elementary school students participate?
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer">
-            <p>Yes, younger students may participate. Keep in mind that problems are written with 6th–8th graders in mind, so the difficulty level is calibrated for middle school.</p>
-          </div>
+          <div class="faq-a">Yes, but problems are written with 6th–8th graders in mind, so the difficulty is calibrated for middle school.</div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">What awards are given?
+          <button class="faq-q">What awards are given?
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer">
-            <p>Awards go to: the <strong>top 3 individual scorers in each grade</strong> (8th, 7th, and 6th &amp; under), the <strong>top 3 teams in the Guts Round</strong>, and the <strong>1st place team in the Jeopardy Countdown Round</strong>.</p>
-          </div>
+          <div class="faq-a">Awards go to: <strong>top 3 individual scorers per grade</strong> (8th, 7th, 6th &amp; under), <strong>top 3 teams in the Guts Round</strong>, and <strong>1st place team in the Jeopardy Countdown Round</strong>.</div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">What is the registration fee?
+          <button class="faq-q">What is the registration fee?
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer">
-            <p>Registration is <strong>$40 per team</strong>. Each team has 3 or 4 students. A school may register up to 6 teams. Payment details will be sent after registration confirmation.</p>
-          </div>
+          <div class="faq-a"><strong>$40 per team</strong> (3–4 students). A school may send up to 6 teams. Payment details are provided after registration confirmation.</div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">When does registration open for 2027?
+          <button class="faq-q">When does 2027 registration open?
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer">
-            <p>Registration for TKAMT 2027 will open in Fall 2026. Fill out the interest form below and we'll email you as soon as it goes live. Spots fill quickly — in 2026, registration closed within weeks of opening.</p>
-          </div>
+          <div class="faq-a">Fall 2026. Sign up below to be notified the moment it opens — spots fill quickly.</div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">What topics are covered on the tests?
+          <button class="faq-q">What topics are on the tests?
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer">
-            <p>The Individual Round covers all standard math competition topics: <strong>Algebra, Geometry, Number Theory, and Counting &amp; Probability</strong>. Problems are written for middle school students. Check the <a href="#archive">archive</a> for past problems to get a feel for the difficulty level.</p>
-          </div>
+          <div class="faq-a">The Individual Round covers <strong>Algebra, Geometry, Number Theory, and Counting &amp; Probability</strong>. Difficulty is calibrated for middle school. Check the <a href="#archive">archive</a> to practice with real past problems.</div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">Where can I find day-of logistics?
+          <button class="faq-q">How do I contact the organizers?
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <div class="faq-answer">
-            <p>Logistics details (parking, schedule, room assignments) will be posted on this website closer to the tournament date and emailed to all registered coaches. Sign up below to stay in the loop.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">How do I contact the organizers?
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          <div class="faq-answer">
-            <p>Email us at <a href="mailto:math.team@tka.org">math.team@tka.org</a>. You can also find us on <a href="https://www.youtube.com/@TKAMathTournament" target="_blank" rel="noopener">YouTube</a> where we post tournament highlights.</p>
-          </div>
+          <div class="faq-a">Email <a href="mailto:math.team@tka.org">math.team@tka.org</a>. You can also find us on <a href="https://www.youtube.com/@TKAMathTournament" target="_blank" rel="noopener">YouTube</a> for tournament highlights.</div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ─── REGISTER / INTEREST FORM ─────────────────────────────────── -->
-  <section id="register" class="register-section">
+  <!-- ─── REGISTER ───────────────────────────────────────────────── -->
+  <section id="register">
     <div class="container">
-      <div class="section-label light">Get Early Access</div>
-      <h2 class="light">Stay in the <span class="accent-gold">Loop</span></h2>
-      <p class="section-intro light">Registration opens Fall 2026. Drop your info below and we'll reach out the moment spots open — plus send you practice resources over the summer.</p>
+      <span class="tag" style="color:var(--gold-bright)">Get Early Access</span>
+      <div class="section-rule"></div>
+      <h2>Stay in the Loop</h2>
+      <p class="section-intro">Registration opens Fall 2026. Drop your info below and we'll reach out the moment spots open.</p>
 
-      <div class="register-wrap">
-        <div class="register-benefits">
+      <div class="register-layout">
+        <div class="register-sidebar">
           <h3>Why sign up early?</h3>
-          <ul>
-            <li><span class="check">✓</span> First to know when registration opens</li>
-            <li><span class="check">✓</span> Access to past practice problem sets</li>
-            <li><span class="check">✓</span> Tournament day logistics updates</li>
-            <li><span class="check">✓</span> Capacity is limited — don't miss out</li>
-          </ul>
-          <div class="register-count">
-            <span class="register-count-num" id="signupCount">19</span>
-            <span class="register-count-label">schools competed in 2026 — be part of 2027</span>
+          <div class="register-perks">
+            <div class="perk"><span class="perk-icon">✓</span> First to know when registration opens</div>
+            <div class="perk"><span class="perk-icon">✓</span> Access to past practice problem sets</div>
+            <div class="perk"><span class="perk-icon">✓</span> Tournament day logistics updates</div>
+            <div class="perk"><span class="perk-icon">✓</span> Capacity is limited — don't miss out</div>
+          </div>
+          <div class="register-counter">
+            <div class="rc-num">19</div>
+            <div class="rc-label">schools competed in 2026 — be part of 2027</div>
           </div>
         </div>
 
-        <div class="form-card" id="form-card">
+        <div class="form-card">
+          <!-- Step 1 -->
           <div id="form-step" class="form-step active">
             <h3>Express Interest</h3>
-            <p class="form-sub">No commitment — just let us know you're in.</p>
+            <p>No commitment — just let us know you're in.</p>
             <form id="interest-form" novalidate>
-              <div class="form-row">
-                <div class="field-group">
-                  <label for="field-name">Your Name <span class="req">*</span></label>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="field-name">Name <span class="req">*</span></label>
                   <input id="field-name" name="name" type="text" placeholder="Jane Smith" autocomplete="name" required />
-                  <span class="field-error" id="err-name"></span>
+                  <span class="field-err" id="err-name"></span>
                 </div>
-                <div class="field-group">
-                  <label for="field-email">Email Address <span class="req">*</span></label>
+                <div class="field">
+                  <label for="field-email">Email <span class="req">*</span></label>
                   <input id="field-email" name="email" type="email" placeholder="jane@school.edu" autocomplete="email" required />
-                  <span class="field-error" id="err-email"></span>
+                  <span class="field-err" id="err-email"></span>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="field-group">
-                  <label for="field-school">School Name <span class="req">*</span></label>
+                <div class="field">
+                  <label for="field-school">School <span class="req">*</span></label>
                   <input id="field-school" name="school" type="text" placeholder="Lincoln Middle School" required />
-                  <span class="field-error" id="err-school"></span>
+                  <span class="field-err" id="err-school"></span>
                 </div>
-                <div class="field-group">
-                  <label for="field-role">Your Role <span class="req">*</span></label>
+                <div class="field">
+                  <label for="field-role">Role <span class="req">*</span></label>
                   <select id="field-role" name="role" required>
-                    <option value="" disabled selected>Select one…</option>
+                    <option value="" disabled selected>Select…</option>
                     <option value="Coach / Teacher">Coach / Teacher</option>
                     <option value="Parent">Parent</option>
                     <option value="Student">Student</option>
                     <option value="Other">Other</option>
                   </select>
-                  <span class="field-error" id="err-role"></span>
+                  <span class="field-err" id="err-role"></span>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="field-group">
-                  <label for="field-teams">Estimated teams attending</label>
+                <div class="field">
+                  <label for="field-teams">Estimated teams</label>
                   <select id="field-teams" name="teams">
-                    <option value="" selected>Not sure yet</option>
+                    <option value="">Not sure yet</option>
                     <option value="1">1 team (3–4 students)</option>
                     <option value="2">2 teams</option>
                     <option value="3">3 teams</option>
-                    <option value="4+">4 or more teams</option>
+                    <option value="4+">4+ teams</option>
                   </select>
                 </div>
-                <div class="field-group">
-                  <label for="field-hear">How did you hear about TKAMT?</label>
+                <div class="field">
+                  <label for="field-hear">How did you hear about us?</label>
                   <select id="field-hear" name="hear">
-                    <option value="" selected>Select…</option>
-                    <option value="Coach / Teacher">From a coach or teacher</option>
-                    <option value="Friend / Student">From a friend or student</option>
-                    <option value="AoPS / Math forum">AoPS or math forum</option>
+                    <option value="">Select…</option>
+                    <option value="Coach / Teacher">Coach or teacher</option>
+                    <option value="Friend / Student">Friend or student</option>
+                    <option value="AoPS / Forum">AoPS or math forum</option>
                     <option value="Social media">Social media</option>
-                    <option value="Returning competitor">We competed before</option>
+                    <option value="Returning">We competed before</option>
                     <option value="Other">Other</option>
                   </select>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit">
+              <button type="submit" class="btn btn-gold form-submit" id="form-submit">
                 <span id="btn-text">Count Me In</span>
-                <svg id="btn-spinner" class="spin hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                <svg id="btn-spinner" class="spin hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
               </button>
-              <p class="form-privacy">We'll only use your email to send TKAMT updates. No spam, ever.</p>
-              <p class="form-error-global hidden" id="form-error-global">Something went wrong — please try again or email <a href="mailto:math.team@tka.org">math.team@tka.org</a>.</p>
+              <p class="form-privacy">Your email is only used for TKAMT updates. No spam, ever.</p>
+              <p class="form-err-global hidden" id="form-error-global">Something went wrong — try again or email <a href="mailto:math.team@tka.org">math.team@tka.org</a>.</p>
             </form>
           </div>
-
+          <!-- Step 2 -->
           <div id="success-step" class="form-step">
-            <div class="success-icon">✓</div>
+            <div class="success-check">✓</div>
             <h3>You're on the list!</h3>
-            <p>Thanks, <strong id="success-name"></strong>! We'll email <strong id="success-email"></strong> the moment 2027 registration opens.</p>
-            <p class="success-sub">In the meantime, try past problems in the <a href="#archive">archive</a> to start preparing.</p>
+            <p>Thanks, <strong id="success-name"></strong>! We'll email <strong id="success-email"></strong> when 2027 registration opens.</p>
+            <p>In the meantime, try past problems in the <a href="#archive">archive</a>.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── FOOTER ────────────────────────────────────────────────────── -->
+  <!-- ─── FOOTER ─────────────────────────────────────────────────── -->
   <footer>
-    <div class="container footer-inner">
+    <div class="footer-top">
       <div class="footer-brand">
         <div class="footer-logo">TKAMT <span>2027</span></div>
         <p>A student-run math tournament<br/>hosted by The King's Academy<br/>Sunnyvale, CA</p>
         <a href="mailto:math.team@tka.org" class="footer-email">math.team@tka.org</a>
       </div>
-      <div class="footer-links">
-        <h4>Quick Links</h4>
+      <div class="footer-col">
+        <h4>Navigate</h4>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#format">Format</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#archive">Archive</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#register">Register Interest</a></li>
         </ul>
       </div>
-      <div class="footer-links">
-        <h4>Past Tournaments</h4>
+      <div class="footer-col">
+        <h4>Archive</h4>
         <ul>
-          <li><a href="#archive">TKAMT 2026</a></li>
-          <li><a href="#archive">TKAMT 2025</a></li>
-          <li><a href="#archive">TKAMT 2024</a></li>
-          <li><a href="#archive">TKAMT 2023</a></li>
+          <li><a href="#archive">2026 Problems</a></li>
+          <li><a href="#archive">2025 Problems</a></li>
+          <li><a href="#archive">2024 Problems</a></li>
+          <li><a href="#archive">2023 Problems</a></li>
         </ul>
       </div>
-      <div class="footer-social">
-        <h4>Follow &amp; Contact</h4>
-        <div class="social-links">
-          <a href="mailto:math.team@tka.org" class="social-link" aria-label="Email">
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="footer-socials">
+          <a href="mailto:math.team@tka.org" class="soc-btn" aria-label="Email">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
           </a>
-          <a href="https://www.youtube.com/@TKAMathTournament" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">
+          <a href="https://www.youtube.com/@TKAMathTournament" target="_blank" rel="noopener" class="soc-btn" aria-label="YouTube">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           </a>
-          <a href="https://www.tka.org/" target="_blank" rel="noopener" class="social-link" aria-label="The King's Academy website">
+          <a href="https://www.tka.org/" target="_blank" rel="noopener" class="soc-btn" aria-label="TKA website">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </a>
         </div>
-        <p class="footer-tka-link"><a href="https://www.tka.org/" target="_blank" rel="noopener">The King's Academy ↗</a></p>
+        <a href="https://www.tka.org/" target="_blank" rel="noopener" style="color:rgba(255,255,255,.4);font-size:.82rem;">The King's Academy ↗</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>© 2027 TKA Math Tournament · The King's Academy · All Rights Reserved</p>
-        <p class="footer-analytics-note">Site visits are tracked anonymously with Google Analytics.</p>
-      </div>
+    <div class="footer-bottom container">
+      <p>© 2027 TKA Math Tournament · The King's Academy · All Rights Reserved</p>
+      <p>Site visits tracked anonymously with Google Analytics.</p>
     </div>
   </footer>
 
