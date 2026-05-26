@@ -110,7 +110,7 @@ function closeLb() { lightbox.classList.remove('open'); document.body.style.over
      (Execute as: Me, Access: Anyone) → copy the URL
   3. Paste the URL below and remove the dev-mode guard
 */
-const APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL_HERE';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwEk_xZZe7E6VEx3gYI-ypz-0CJGuYSOzFvHx5DsYEAXhr49Z1u9rx496oclMh2MtmCSQ/exec';
 
 const form        = document.getElementById('interest-form');
 const formStep    = document.getElementById('form-step');
