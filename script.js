@@ -1,3 +1,8 @@
+/* ─── ANNOUNCEMENT BAR ─────────────────────────────────────────── */
+document.getElementById('announce-close').addEventListener('click', () => {
+  document.getElementById('announce-bar').classList.add('hidden');
+});
+
 /* ─── NAV SCROLL ───────────────────────────────────────────────── */
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
@@ -50,7 +55,7 @@ document.querySelectorAll('.stat-number[data-target]').forEach(n => statObserver
 
 /* ─── SCROLL FADE-IN ───────────────────────────────────────────── */
 const fadeEls = document.querySelectorAll(
-  '.stat-card, .event-card, .about-text, .about-image-wrap, .winner-card, .archive-item, .faq-item, .register-benefits, .form-card'
+  '.stat-card, .format-card, .about-text, .about-image-wrap, .results-col, .archive-item, .faq-item, .register-benefits, .form-card, .panelist-card, .score-dist-card'
 );
 fadeEls.forEach(el => el.classList.add('fade-up'));
 const fadeObserver = new IntersectionObserver((entries) => {
