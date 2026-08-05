@@ -81,6 +81,79 @@ const fadeObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
 fadeEls.forEach(el => fadeObserver.observe(el));
 
+/* ─── SCORE DISTRIBUTION CHARTS (2026) ─────────────────────────── */
+/*
+  Native SVG bar charts recreated from the official 2026 results,
+  replacing the old scoredistribution.png image.
+*/
+function buildBarChart(mountId, opts) {
+  const mount = document.getElementById(mountId);
+  if (!mount) return;
+
+  const { values, labels, yMax, yTicks, rotateLabels = false, labelEvery = 1 } = opts;
+  const W = 640, H = 320;
+  const padL = 34, padR = 12, padT = 16, padB = rotateLabels ? 54 : 34;
+  const plotW = W - padL - padR;
+  const plotH = H - padT - padB;
+  const n = values.length;
+  const slot = plotW / n;
+  const barW = slot * 0.72;
+
+  const x = i => padL + i * slot + (slot - barW) / 2;
+  const y = v => padT + plotH - (v / yMax) * plotH;
+
+  let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" preserveAspectRatio="xMidYMid meet">`;
+
+  // horizontal grid lines + y-axis labels
+  yTicks.forEach(t => {
+    const yy = y(t);
+    svg += `<line class="chart-grid-line" x1="${padL}" y1="${yy.toFixed(1)}" x2="${W - padR}" y2="${yy.toFixed(1)}"/>`;
+    svg += `<text class="chart-axis-label" x="${padL - 6}" y="${(yy + 3.5).toFixed(1)}" text-anchor="end">${t}</text>`;
+  });
+
+  // bars
+  values.forEach((v, i) => {
+    if (v <= 0) return;
+    const bh = (v / yMax) * plotH;
+    svg += `<rect class="chart-bar" x="${x(i).toFixed(1)}" y="${y(v).toFixed(1)}" width="${barW.toFixed(1)}" height="${bh.toFixed(1)}" rx="1.5"><title>${labels[i]}: ${v}</title></rect>`;
+  });
+
+  // baseline
+  svg += `<line class="chart-baseline" x1="${padL}" y1="${(padT + plotH).toFixed(1)}" x2="${W - padR}" y2="${(padT + plotH).toFixed(1)}"/>`;
+
+  // x-axis labels
+  labels.forEach((lbl, i) => {
+    if (i % labelEvery !== 0) return;
+    const cx = padL + i * slot + slot / 2;
+    const yy = padT + plotH + (rotateLabels ? 12 : 16);
+    if (rotateLabels) {
+      svg += `<text class="chart-axis-label" x="${cx.toFixed(1)}" y="${yy.toFixed(1)}" text-anchor="end" transform="rotate(-45 ${cx.toFixed(1)} ${yy.toFixed(1)})">${lbl}</text>`;
+    } else {
+      svg += `<text class="chart-axis-label" x="${cx.toFixed(1)}" y="${yy.toFixed(1)}" text-anchor="middle">${lbl}</text>`;
+    }
+  });
+
+  svg += `</svg>`;
+  mount.innerHTML = svg;
+}
+
+// Individual Round — scores 1..20, count of students at each score
+buildBarChart('chart-individual', {
+  values: [0, 0, 3, 6, 3, 12, 19, 23, 18, 24, 29, 22, 23, 16, 10, 10, 2, 1, 1, 0],
+  labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'],
+  yMax: 30,
+  yTicks: [0, 10, 20, 30]
+});
+
+// Guts Round — team totals bucketed in bins of 10 (0–170)
+buildBarChart('chart-guts', {
+  values: [3, 14, 9, 6, 6, 7, 4, 3, 2, 2, 0, 1, 2, 1, 0, 0, 1],
+  labels: ['0','10','20','30','40','50','60','70','80','90','100','110','120','130','140','150','160'],
+  yMax: 15,
+  yTicks: [0, 5, 10, 15],
+  rotateLabels: true
+});
+
 /* ─── GALLERY LIGHTBOX ─────────────────────────────────────────── */
 const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
@@ -104,13 +177,15 @@ function closeLb() { lightbox.classList.remove('open'); document.body.style.over
 
 /* ─── INTEREST FORM ────────────────────────────────────────────── */
 /*
-  BACKEND SETUP (Google Sheets via Apps Script):
-  1. Create a Google Sheet, add a tab named "TKAMT Signups"
-  2. Extensions → Apps Script → paste apps-script.gs → Deploy as Web App
-     (Execute as: Me, Access: Anyone) → copy the URL
-  3. Paste the URL below and remove the dev-mode guard
+  BACKEND SETUP (Google Sheets via Apps Script) — the previous
+  deployment was deleted, so the form must be reconnected to a NEW sheet:
+  1. Create a NEW Google Sheet (the form auto-creates a "2027TKAMT Signups" tab).
+  2. Extensions → Apps Script → paste apps-script.gs → Deploy → New deployment
+     → Web App (Execute as: Me, Access: Anyone) → copy the /exec URL.
+  3. Paste that URL below, replacing YOUR_APPS_SCRIPT_URL_HERE.
+  Until then, the guard below runs the form in dev mode (logs, no save).
 */
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwEk_xZZe7E6VEx3gYI-ypz-0CJGuYSOzFvHx5DsYEAXhr49Z1u9rx496oclMh2MtmCSQ/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwK9znbunplNgszr6GApNeu4NVFWEDm6_tBqX05E5097dwOhb119mAW7G9EYwkN0sk-Gg/exec';
 
 const form        = document.getElementById('interest-form');
 const formStep    = document.getElementById('form-step');

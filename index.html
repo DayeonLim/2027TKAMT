@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TKAMT 2027 | TKA Math Tournament</title>
+  <title>2027TKAMT | TKA Math Tournament</title>
   <meta name="description" content="The 5th annual TKA Math Tournament — a student-run middle school math competition at The King's Academy in Sunnyvale, CA. Register your school for 2027." />
 
   <!-- Google Analytics 4 -->
@@ -33,7 +33,7 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a class="nav-logo" href="#hero">
-        <span class="nav-logo-text">TKAMT<span class="nav-logo-year">2027</span></span>
+        <span class="nav-logo-text"><span class="nav-logo-year">2027</span>TKAMT</span>
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -147,11 +147,16 @@
         </div>
       </div>
 
-      <div class="score-dist-wrap">
-        <img src="assets/photos/scoredistribution.png" alt="2026 Score Distribution — Individual Round and Guts Round" class="score-dist-img" />
-        <div class="score-dist-meta">
-          <span>Individual Round — Top: 19 &nbsp;·&nbsp; Avg: 10.48 &nbsp;·&nbsp; Median: 11</span>
-          <span>Guts Round — Top: 168 &nbsp;·&nbsp; Avg: 45.15 &nbsp;·&nbsp; Median: 32</span>
+      <div class="charts-row">
+        <div class="chart-card">
+          <div class="chart-title">Individual Round Score Distribution</div>
+          <div class="chart-svg" id="chart-individual"></div>
+          <div class="chart-meta">Top: 19 &nbsp;·&nbsp; Avg: 10.48 &nbsp;·&nbsp; Median: 11 &nbsp;·&nbsp; 222 students</div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">Guts Round Score Distribution</div>
+          <div class="chart-svg" id="chart-guts"></div>
+          <div class="chart-meta">Top: 168 &nbsp;·&nbsp; Avg: 45.15 &nbsp;·&nbsp; Median: 32 &nbsp;·&nbsp; 61 teams</div>
         </div>
       </div>
 
@@ -619,7 +624,7 @@
   <footer>
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="footer-logo">TKAMT <span>2027</span></div>
+        <div class="footer-logo"><span>2027</span>TKAMT</div>
         <p>A student-run math tournament<br/>hosted by The King's Academy<br/>Sunnyvale, CA</p>
         <a href="mailto:math.team@tka.org" class="footer-email">math.team@tka.org</a>
       </div>
